@@ -1,0 +1,37 @@
+#ifndef COMMAND_H
+#define COMMAND_H
+#include "common/Common.h"
+enum cmdType {
+    NONE = 0,
+    APP = 0XFE,
+    BL = 0XFF,
+};
+enum cmdCode {
+    GET_STATUS = 0X00,
+    BL_SYSINFO = 0X01,
+    BL_VERIFY_KEY,
+    BL_FLASH,
+    BL_VERIFY_CRC,
+    BL_LAUNCH_APP,
+    APP_SYSINFO = 0X10,
+    APP_LAUNCH_BL,
+    APP_READ_IDCARD,
+    APP_WRITE_IDCARD,
+    APP_SET_TIME,
+    APP_SET_MODE,
+    APP_SET_MFG,
+    APP_SET_LANGUAGE,
+    APP_SET_PRINTER,
+    APP_SET_OUTFAB,
+    APP_ChANL_SCAN = 0x24,
+    APP_READ_RES = 34,
+    APP_WRITE_RES = 35,
+    APP_RECEIVE_CURVERDATA = 0x71,
+    APP_RECEIVE_CT = 0x70,
+    APP_RECEIVE_QRCODE_DATA = 0x72,
+    APP_SET_BORDER_LINE,
+    APP_READ_BORDER_LINE,
+    APP_RECEIVE_RAWDATA,
+    APP_SET_CAL
+};
+#endif // COMMAND_H

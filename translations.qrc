@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/translations">
+        <file>i18n/Lidar_en.qm</file>
+    </qresource>
+    <qresource prefix="/"/>
+</RCC>
