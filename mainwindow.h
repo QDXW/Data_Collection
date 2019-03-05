@@ -19,6 +19,7 @@
 #include "common/CRC16.h"
 #include "Signalprocess/qrcode.h"
 #include "Signalprocess/Signalprocess.h"
+#include "password.h"
 
 namespace Ui {
 class MainWindow;
@@ -44,7 +45,10 @@ public:
     void Get_SetSn_Init();
     /*输入限制初始化*/
     void Input_Limit_Init();
+
+
 private slots:
+    void ExeReceieCommand();
     void on_Connect_Btn_clicked();
     void ReadData();
     void SearchPort();
@@ -96,24 +100,26 @@ private slots:
 
     void on_Clear_Btn_clicked();
 
-    void on_RecoverySet_Btn_clicked();
-
     void on_JieKe_Btn_clicked();
-
-    void on_Chanl_Scan_Btn_clicked();
 
 private:
     Ui::MainWindow *ui;
+    /*接受Buff*/
+    QByteArray ReadBuff;
+    QTimer *ExeCommand;
+
+    Password *Password_Information;
 
     QStandardItemModel* dataModel;          //绑定表格Tableview
     QStandardItemModel* C_TModelLocal;      //绑定本地计算的CT TableView
     QStandardItemModel* C_TModelRecev;      //绑定下位机计算的 CT Tableview
 
-    QList<float> Showdata;                  //原始表格数据临时存储
-    QList<float> SaveShowdata[300];              //保存表格数据
+    QList<float> Showdata[100];                  //原始表格数据临时存储
+    QList<float> SaveShowdata[50];              //保存表格数据
     int SaveShowdataIndex = 0;
 
     int index=0;
+    int indexc=0;
 
     QList<float> C_LocalDate;               //本地C
     QList<float> T_LocalDate;               //本地T
@@ -126,8 +132,8 @@ private:
 
     QTimer *SearchPortT;                    //刷新端口定时器
 
-    QVector<double>  TempX[8];              //八条曲线的X轴临时值
-    QVector<double> Curve[8];               //八条曲线Y轴的临时值
+    QVector<double>  TempX[20];              //八条曲线的X轴临时值
+    QVector<double> Curve[20];               //八条曲线Y轴的临时值
 
     QSerialPort *SerialPort;                //传输绑定的端口
     QSerialPort *SerialPort2;               //刷新端口绑定的端口
@@ -175,6 +181,11 @@ private:
     void Get_Cal_Result(quint8 *,quint16);
     /*获取设备模式*/
     void Get_Device_Status(quint8 *,quint16);
+private slots:
+    void on_ChangeShow_clicked();
+    void on_pushButton_clicked();
+    void on_Set_5V_clicked();
+    void on_password_clicked();
 };
 
 #endif // MAINWINDOW_H

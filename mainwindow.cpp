@@ -27,13 +27,19 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(SearchPortT, SIGNAL(timeout()), this, SLOT(SearchPort()));
     SearchPortT->start();
 
+    ExeCommand = new QTimer;
+    ExeCommand->setInterval(50);
+    connect(ExeCommand, SIGNAL(timeout()), this, SLOT(ExeReceieCommand()));
+    ExeCommand->start();
+
     DataCurveShowInit();
     connect(SerialPort,SIGNAL(errorOccurred(QSerialPort::SerialPortError)),this,SLOT(Rrrorhandle(QSerialPort::SerialPortError)));
-   // ui->groupBox_2->setEnabled(false);
+    ui->groupBox_2->setEnabled(false);
     ui->groupBox_3->setEnabled(false);
-    ui->groupBox_4->setEnabled(false);
     ui->Get_Status_Btn->setEnabled(true);
     Config_File_Init();
+
+    Password_Information = new Password;
     /*输入框输入控制*/
     Input_Limit_Init();
 //    QString qssFile = ":/darkblue.css";
@@ -46,6 +52,87 @@ MainWindow::MainWindow(QWidget *parent) :
 //        file.close();
 //    }
 
+}
+void MainWindow::ExeReceieCommand()
+{
+    if(ReadBuff.length() > 4096)
+    {
+        QMessageBox::information(this, tr("警告"), "错误");
+        ReadBuff.clear();
+        return;
+    }
+    quint8  stdid,RecvBuff[4096];
+    quint16 Datalength,Total_Length;
+    QString Str;
+    if(ReadBuff.length() > 0)
+    {
+          memset(RecvBuff,0,4096);
+          memcpy(&RecvBuff[0],ReadBuff,ReadBuff.length());
+          Total_Length = ReadBuff.length();
+          for(int i = 0; i < Total_Length; i++)
+          {
+             Str.append(tr("%1").arg(RecvBuff[i]&0xFF,2, 16, QLatin1Char('0')).toUpper() + QString(" "));
+          }
+          qDebug()<<Str;
+          Str.clear();
+          memcpy(&Datalength,&RecvBuff[1],2);
+    }
+    if(Datalength <= Total_Length-2)
+    {
+        if((RecvBuff[0] == '$') && (RecvBuff[Datalength+1] == '#'))
+        {
+           Str.append(tr("接受数据:"));
+           Datalength +=2;
+           for(int i = 0; i < Datalength; i++)
+           {
+              Str.append(tr("%1").arg(RecvBuff[i]&0xFF,2, 16, QLatin1Char('0')).toUpper() + QString(" "));
+           }
+           QColor  clrR(255,0,0);
+           stringToHtmlFilter(Str);
+           stringToHtml(Str,clrR);
+           ui->textBrowser->moveCursor(QTextCursor::End);//接收框始终定为在末尾一行
+           ui->textBrowser->insertHtml(Str);
+           ui->textBrowser->append("\n");
+            stdid = RecvBuff[4];
+            switch(stdid)
+            {
+                case APP_SYSINFO:
+                    break;
+                case APP_RECEIVE_CURVERDATA:
+                    Get_Curver_Data_Handle(RecvBuff,Datalength);
+                    break;
+                case APP_READ_BORDER_LINE:
+                    Get_Border_Line(RecvBuff,Datalength);
+                    break;
+                case APP_RECEIVE_RAWDATA:
+                    Get_RawData_Handle(RecvBuff,Datalength);
+                    break;
+                case APP_RECEIVE_CT:
+                    Get_C_and_T_Value(RecvBuff,Datalength);
+                case APP_READ_RES:
+                    Get_Res_Value(RecvBuff,Datalength);
+                    break;
+                case APP_RECEIVE_QRCODE_DATA:
+                    Get_QRcode_Data(RecvBuff,Datalength);
+                    break;
+                case APP_SET_CAL:
+                    Get_Cal_Result(RecvBuff,Datalength);
+                    break;
+                case GET_STATUS:
+                    Get_Device_Status(RecvBuff,Datalength);
+                    break;
+                case APP_READ_IDCARD:
+                    /*读取ID卡*/
+                    break;
+                case APP_SET_MFG:
+                    Get_SetSn_Init();
+                    break;
+                default:
+                    break;
+            }
+            ReadBuff.remove(0,Datalength);
+        }
+    }
 }
 void MainWindow::Input_Limit_Init()
 {
@@ -97,7 +184,6 @@ void MainWindow::on_Connect_Btn_clicked()
         ui->Connect_Btn->setText("连接");
         ui->groupBox_2->setEnabled(false);
         ui->groupBox_3->setEnabled(false);
-        ui->groupBox_4->setEnabled(false);
         ui->COMSelectcomboBox->setEnabled(true);
         SerialPort->clear();
         SerialPort->close();
@@ -236,7 +322,9 @@ int MainWindow::CommandSend(int cmdDataNum, byte cmdType, byte cmdCode, int bypa
     {
         QMessageBox::warning(this,tr("串口问题"),tr("串口未连接，请先连接串口。"));
     }
+    return SIZE_LEN_HEAD_CMD_CRC;
 }
+
 void MainWindow::stringToHtmlFilter(QString &str)
 {
     //注意这几行代码的顺序不能乱，否则会造成多次替换
@@ -261,95 +349,58 @@ void MainWindow::stringToHtml(QString &str,QColor crl)
 
 void MainWindow::ReadData()
 {
-    static int i=0;
-    i++;
-    static QByteArray ReadBuff;
-    quint8  stdid,RecvBuff[2048];
-    quint16 Datalength,Total_Length;
-    QString Str;
     ReadBuff.append(SerialPort->readAll());
-    memset(RecvBuff,0,2048);
-    memcpy(&RecvBuff[0],ReadBuff,ReadBuff.length());
-    Total_Length = ReadBuff.length();
-    for(int i = 0; i < Total_Length; i++)
-    {
-       Str.append(tr("%1").arg(RecvBuff[i]&0xFF,2, 16, QLatin1Char('0')).toUpper() + QString(" "));
-    }
-    qDebug()<<Str;
-    Str.clear();
-    memcpy(&Datalength,&RecvBuff[1],2);
-    if(Datalength <= Total_Length-2)
-    {
-        if((ReadBuff[0] == '$') && (ReadBuff[Datalength+1] == '#'))
-        {
-           Str.append(tr("接受数据:"));
-           for(int i = 0; i < Total_Length; i++)
-           {
-              Str.append(tr("%1").arg(RecvBuff[i]&0xFF,2, 16, QLatin1Char('0')).toUpper() + QString(" "));
-           }
-           QColor  clrR(255,0,0);
-           stringToHtmlFilter(Str);
-           stringToHtml(Str,clrR);
-           ui->textBrowser->moveCursor(QTextCursor::End);//接收框始终定为在末尾一行
-           ui->textBrowser->insertHtml(Str);
-           ui->textBrowser->append("\n");
-            stdid = RecvBuff[4];
-            switch(stdid)
-            {
-                case APP_SYSINFO:
-                    break;
-                case APP_RECEIVE_CURVERDATA:
-                    Get_Curver_Data_Handle(RecvBuff,Total_Length);
-                    break;
-                case APP_READ_BORDER_LINE:
-                    Get_Border_Line(RecvBuff,Total_Length);
-                    break;
-                case APP_RECEIVE_RAWDATA:
-                    Get_RawData_Handle(RecvBuff,Total_Length);
-                    break;
-                case APP_RECEIVE_CT:
-                    Get_C_and_T_Value(RecvBuff,Total_Length);
-                case APP_READ_RES:
-                    Get_Res_Value(RecvBuff,Total_Length);
-                    break;
-                case APP_RECEIVE_QRCODE_DATA:
-                    Get_QRcode_Data(RecvBuff,Total_Length);
-                    break;
-                case APP_SET_CAL:
-                    Get_Cal_Result(RecvBuff,Total_Length);
-                    break;
-                case GET_STATUS:
-                    Get_Device_Status(RecvBuff,Total_Length);
-                    break;
-                case APP_READ_IDCARD:
-                    /*读取ID卡*/
-                    break;
-                case APP_SET_MFG:
-                    Get_SetSn_Init();
-                    break;
-                default:
-                    break;
-            }
-            if(index == 8)
-            {
-                index =0;
-            }
-            if(ui->Curver_checkBox->isChecked())
-            {
-                ui->CurveShow->graph(0)->setData(TempX[0], Curve[0]);
-                ui->CurveShow->graph(1)->setData(TempX[1], Curve[1]);
-                ui->CurveShow->graph(2)->setData(TempX[2], Curve[2]);
-                ui->CurveShow->graph(3)->setData(TempX[3], Curve[3]);
-                ui->CurveShow->graph(4)->setData(TempX[4], Curve[4]);
-                ui->CurveShow->graph(5)->setData(TempX[5], Curve[5]);
-                ui->CurveShow->graph(6)->setData(TempX[6], Curve[6]);
-                ui->CurveShow->graph(7)->setData(TempX[7], Curve[7]);
-                ui->CurveShow->replot();
-            }
-            ReadBuff.clear();
-            DataListShow();
-        }
-    }
+//    static QByteArray ReadBuff;
+//    static QByteArray ReadBuff_All;
+//    quint8 RecvBuff[4096];
+//    quint16 Total_Length = 0;
+//    QString Str;
+//    ReadBuff_All = SerialPort->readAll();
+
+//    /* 先拼接数据，得到完整数据，否则就退出舍弃本次数据 */
+//    if(ReadBuff_All[0] != '$')
+//    {
+//        if(ReadBuff[0] != '$')
+//        {
+//            ReadBuff.clear();
+//            ReadBuff_All.clear();
+//            return;
+//        }
+//        else
+//        {
+//            ReadBuff.append(ReadBuff_All);
+//            if(ReadBuff[(ReadBuff.length() - 1)] != '#')
+//            {
+//                return;
+//            }
+//        }
+//    }
+//    else
+//    {
+//        if(ReadBuff_All[(ReadBuff_All.length() - 1)] != '#')
+//        {
+//            ReadBuff.clear();
+//            ReadBuff.append(ReadBuff_All);
+//            return;
+//        }
+//        else
+//        {
+//            ReadBuff.clear();
+//            ReadBuff.append(ReadBuff_All);
+//        }
+//    }
+
+//    /* 对符合要求的数据进行处理 */
+//    memset(RecvBuff,0,3000);
+//    memcpy(&RecvBuff[0],ReadBuff,ReadBuff.length());
+//    Total_Length = ReadBuff.length();
+
+//    for(int i = 0; i < Total_Length; i++)
+//    {
+//       Str.append(tr("%1").arg(RecvBuff[i]&0xFF,2, 16, QLatin1Char('0')).toUpper() + QString(" "));
+//    }
+//    qDebug()<<Str;
+//    Str.clear();
 }
 void MainWindow::Get_Curver_Data_Handle(quint8 *Data,quint16 length)
 {
@@ -357,7 +408,7 @@ void MainWindow::Get_Curver_Data_Handle(quint8 *Data,quint16 length)
     for(int i=0;i<(length-8)/2;i++)
     {
         memcpy(&temp,&Data[5+i*2],2);
-        Showdata.append(temp);
+        Showdata[index].append(temp);
     }
 }
 void MainWindow::Get_Border_Line(quint8 *Data,quint16 length)
@@ -372,20 +423,19 @@ void MainWindow::Get_RawData_Handle(quint8 *Data,quint16 length)
     for(int i=0;i<(length-8)/2;i++)
     {
         memcpy(&temp,&Data[5+i*2],2);
-        Curve[index].append(temp);
-        TempX[index].append(TempX[index].back()+1);
-        Showdata.append(temp);
+        TempX[indexc].append(i);
+        Curve[indexc].append(temp);
+        Showdata[index].append(temp);
     }
-    qDebug()<<index<<SaveShowdataIndex;
-    QR_Date_SignalProcess_Alg_data();
-    memcpy(&SignalProcess_Alg_data.sampleBuffer[0],&Data[5] , length-8);
-    SignalProcess_Alg_data.sampleNumber = (length-8)/2;
-    SignalProcess_Run();
-    C_LocalDate.append(SignalProcess_Alg_data.calcInfo.areaC);
-    T_LocalDate.append(SignalProcess_Alg_data.calcInfo.areaT);
-    qDebug("end");
+//    QR_Date_SignalProcess_Alg_data();
+//    memcpy(&SignalProcess_Alg_data.sampleBuffer[0],&Data[5] , length-8);
+//    SignalProcess_Alg_data.sampleNumber = (length-8)/2;
+//    SignalProcess_Run();
+//    C_LocalDate.append(SignalProcess_Alg_data.calcInfo.areaC);
+//    T_LocalDate.append(SignalProcess_Alg_data.calcInfo.areaT);
+    DataListShow();
+    indexc++;
     index++;
-    SaveShowdataIndex++;
 }
 /*获取CT数据值，单一C数据，多个T数据*/
 void MainWindow::Get_C_and_T_Value (quint8 *Data,quint16 length)
@@ -398,6 +448,7 @@ void MainWindow::Get_C_and_T_Value (quint8 *Data,quint16 length)
        memcpy(&temp,&Data[7+i*2],2);
        T_RecevDate[CandTRecevIndex].append(temp);
     }
+    DataListShow();
     CandTRecevIndex++;
 }
 /* 获取下位机电位器值*/
@@ -425,9 +476,8 @@ void MainWindow::Get_Device_Status(quint8 *Data,quint16 length)
     if(Status == 1)
     {
         ui->Status_Label->setText(tr("%1").arg("APP"));
-        ui->groupBox_2->setEnabled(true);
+//        ui->groupBox_2->setEnabled(true);
         ui->groupBox_3->setEnabled(true);
-        ui->groupBox_4->setEnabled(true);
      }
     else
     {
@@ -508,20 +558,20 @@ void MainWindow::on_SaveBtn_clicked()
 //            }
 //            out << endl;
 //        }
-        for(int i=0;i<20;i++)
+        for(int i=0;i<100;i++)
         {
-            if(!SaveShowdata[i].isEmpty())
+            if(!Showdata[i].isEmpty())
             {
-                for(int j=0;j<SaveShowdata[i].length();j++)
+                for(int j=0;j<Showdata[i].length();j++)
                     {
-                        QString Datatemp = QString(tr("%1").arg(SaveShowdata[i].at(j)));
+                        QString Datatemp = QString(tr("%1").arg(Showdata[i].at(j)));
                         Datatemp.append(',');
                         out <<Datatemp;
                     }
                 out << endl;
             }else
                 {
-               // break;
+                break;
             }
         }
         for(int i = 0;i<C_LocalDate.length();i++)
@@ -627,12 +677,13 @@ void MainWindow::DataListShow()
         }
     }
 
+    /*原始数据展示*/
     QList<QStandardItem *> row;
-    for(int i=0; i<Showdata.length(); i++)
+    ui->tableView->setModel(dataModel);  //绑定数据模型
+    for(int i=0; i<Showdata[index].length(); i++)
     {
         QStandardItem* item = new QStandardItem;
-        item->setData(Showdata.at(i), 0);
-        SaveShowdata[SaveShowdataIndex].append(Showdata.at(i));              //保存表格数据
+        item->setData(Showdata[index].at(i), 0);             //保存表格数据
         row.append(item);
     }
     if(ui->RowDatacheckBox->isChecked())
@@ -642,7 +693,18 @@ void MainWindow::DataListShow()
             dataModel->appendRow(row);
         }
     }
-    Showdata.clear();
+    if(indexc == 8)
+    {
+        //indexc =0;
+    }
+    if(ui->Curver_checkBox->isChecked())
+    {
+        for(int i =0; i<20; i++)
+        {
+            ui->CurveShow->graph(i)->setData(TempX[i], Curve[i]);
+        }
+        ui->CurveShow->replot();
+    }
 }
 void MainWindow::DataCurveShowInit()
 {
@@ -689,6 +751,78 @@ void MainWindow::DataCurveShowInit()
         ui->CurveShow->graph(7)->setPen(pen);
         ui->CurveShow->graph(7)->setName("数据8");
 
+        pen.setWidth(2);
+        ui->CurveShow->addGraph();
+        pen.setColor("#aa0000");
+        ui->CurveShow->graph(8)->setPen(pen);
+        ui->CurveShow->graph(8)->setName("数据9");
+
+        pen.setWidth(2);
+        ui->CurveShow->addGraph();
+        pen.setColor("#aaaa7f");
+        ui->CurveShow->graph(9)->setPen(pen);
+        ui->CurveShow->graph(9)->setName("数据10");
+
+        pen.setWidth(2);
+        ui->CurveShow->addGraph();
+        pen.setColor("#ffaa7f");
+        ui->CurveShow->graph(10)->setPen(pen);
+        ui->CurveShow->graph(10)->setName("数据11");
+
+        pen.setWidth(2);
+        ui->CurveShow->addGraph();
+        pen.setColor("#55aaff");
+        ui->CurveShow->graph(11)->setPen(pen);
+        ui->CurveShow->graph(11)->setName("数据12");
+
+        pen.setWidth(2);
+        ui->CurveShow->addGraph();
+        pen.setColor("#55ffff");
+        ui->CurveShow->graph(12)->setPen(pen);
+        ui->CurveShow->graph(12)->setName("数据13");
+
+        pen.setWidth(2);
+        ui->CurveShow->addGraph();
+        pen.setColor("#aa557f");
+        ui->CurveShow->graph(13)->setPen(pen);
+        ui->CurveShow->graph(13)->setName("数据14");
+
+        pen.setWidth(2);
+        ui->CurveShow->addGraph();
+        pen.setColor("#0055ff");
+        ui->CurveShow->graph(14)->setPen(pen);
+        ui->CurveShow->graph(14)->setName("数据15");
+
+        pen.setWidth(2);
+        ui->CurveShow->addGraph();
+        pen.setColor("#ffaaff");
+        ui->CurveShow->graph(15)->setPen(pen);
+        ui->CurveShow->graph(15)->setName("数据16");
+
+
+        pen.setWidth(2);
+        ui->CurveShow->addGraph();
+        pen.setColor("#aa00ff");
+        ui->CurveShow->graph(16)->setPen(pen);
+        ui->CurveShow->graph(16)->setName("数据17");
+
+        pen.setWidth(2);
+        ui->CurveShow->addGraph();
+        pen.setColor("#00557f");
+        ui->CurveShow->graph(17)->setPen(pen);
+        ui->CurveShow->graph(17)->setName("数据18");
+
+        pen.setWidth(2);
+        ui->CurveShow->addGraph();
+        pen.setColor("#ff007f");
+        ui->CurveShow->graph(18)->setPen(pen);
+        ui->CurveShow->graph(18)->setName("数据19");
+
+        pen.setWidth(2);
+        ui->CurveShow->addGraph();
+        pen.setColor("#550000");
+        ui->CurveShow->graph(19)->setPen(pen);
+        ui->CurveShow->graph(19)->setName("数据20");
 
        ui->CurveShow->legend->setVisible(true);
         ui->CurveShow->xAxis->setLabel("x");
@@ -712,14 +846,14 @@ void MainWindow::DataCurveShowInit()
          ui->CurveShow->yAxis->setRange(0, 2000);
          ui->CurveShow->xAxis->setRange(0, 500);
 
-        ui->CurveShow->graph(0)->setData(TempX[0], Curve[0]);
-        ui->CurveShow->graph(1)->setData(TempX[1], Curve[1]);
-        ui->CurveShow->graph(2)->setData(TempX[2], Curve[2]);
-        ui->CurveShow->graph(3)->setData(TempX[3], Curve[3]);
-        ui->CurveShow->graph(4)->setData(TempX[4], Curve[4]);
-        ui->CurveShow->graph(5)->setData(TempX[5], Curve[5]);
-        ui->CurveShow->graph(6)->setData(TempX[6], Curve[6]);
-        ui->CurveShow->graph(7)->setData(TempX[7], Curve[7]);
+//        ui->CurveShow->graph(0)->setData(TempX[0], Curve[0]);
+//        ui->CurveShow->graph(1)->setData(TempX[1], Curve[1]);
+//        ui->CurveShow->graph(2)->setData(TempX[2], Curve[2]);
+//        ui->CurveShow->graph(3)->setData(TempX[3], Curve[3]);
+//        ui->CurveShow->graph(4)->setData(TempX[4], Curve[4]);
+//        ui->CurveShow->graph(5)->setData(TempX[5], Curve[5]);
+//        ui->CurveShow->graph(6)->setData(TempX[6], Curve[6]);
+//        ui->CurveShow->graph(7)->setData(TempX[7], Curve[7]);
 
         connect(ui->CurveShow->xAxis, SIGNAL(rangeChanged(QCPRange)), ui->CurveShow->xAxis2, SLOT(setRange(QCPRange)), Qt::DirectConnection);
         connect(ui->CurveShow->yAxis, SIGNAL(rangeChanged(QCPRange)), ui->CurveShow->yAxis2, SLOT(setRange(QCPRange)), Qt::DirectConnection);
@@ -763,10 +897,11 @@ void MainWindow::on_TypeSelctcomboBox_2_activated(int index)
 void MainWindow::on_ClearBtn_clicked()
 {
 
-    SaveShowdataIndex = 0;
-    for(int i=0;i<20;i++)
+    index = 0;
+    indexc = 0;
+    for(int i=0;i<100;i++)
     {
-        SaveShowdata[i].clear();
+        Showdata[i].clear();
     }
     dataModel->clear();
     C_TModelLocal->clear();
@@ -783,7 +918,7 @@ void MainWindow::on_ClearBtn_clicked()
     CandTRecevIndex = 0;
     C_T_RecevDate.clear();
 
-    for(int i=0; i<8; i++)
+    for(int i=0; i<20; i++)
     {
         Curve[i].clear();
         TempX[i].clear();
@@ -1119,23 +1254,23 @@ void MainWindow::on_Clear_Btn_clicked()
 {
     ui->textBrowser->clear();
 }
-/***********************************************************************************************
-*函数名:  on_RecoverySet_Btn_clicked
-*函数功能描述:出厂设置
-*函数参数:无
-*函数返回值: 无
-***********************************************************************************************/
-void MainWindow::on_RecoverySet_Btn_clicked()
-{
-    int cmdDataLength = 2;
-    commandType = (quint8)cmdType::APP;
-    commandCode = (quint8)cmdCode::APP_SET_OUTFAB;
+///***********************************************************************************************
+//*函数名:  on_RecoverySet_Btn_clicked
+//*函数功能描述:出厂设置
+//*函数参数:无
+//*函数返回值: 无
+//***********************************************************************************************/
+//void MainWindow::on_RecoverySet_Btn_clicked()
+//{
+//    int cmdDataLength = 2;
+//    commandType = (quint8)cmdType::APP;
+//    commandCode = (quint8)cmdCode::APP_SET_OUTFAB;
 
-    cmdBuffer[OFFSET_CMD_DATA] = 0;
-    cmdBuffer[OFFSET_CMD_DATA + 1] = 0;
+//    cmdBuffer[OFFSET_CMD_DATA] = 0;
+//    cmdBuffer[OFFSET_CMD_DATA + 1] = 0;
 
-    CommandSend(cmdDataLength, commandType, commandCode, 0);
-}
+//    CommandSend(cmdDataLength, commandType, commandCode, 0);
+//}
 /***********************************************************************************************
 *函数名:  on_JieKe_Btn_clicked
 *函数功能描述:捷克语
@@ -1154,24 +1289,24 @@ void MainWindow::on_JieKe_Btn_clicked()
 
     CommandSend(cmdDataLength, commandType, commandCode, 0);
 }
-/***********************************************************************************************
-*函数名:  on_Chanl_Scan_Btn_clicked
-*函数功能描述:通道Scan
-*函数参数:无
-*函数返回值: 无
-***********************************************************************************************/
-void MainWindow::on_Chanl_Scan_Btn_clicked()
-{
-    quint8 chanl = ui->Chanl_Scan_comboBox->currentIndex()+1;
-    int cmdDataLength = 1;
+///***********************************************************************************************
+//*函数名:  on_Chanl_Scan_Btn_clicked
+//*函数功能描述:通道Scan
+//*函数参数:无
+//*函数返回值: 无
+//***********************************************************************************************/
+//void MainWindow::on_Chanl_Scan_Btn_clicked()
+//{
+//    quint8 chanl = ui->Chanl_Scan_comboBox->currentIndex()+1;
+//    int cmdDataLength = 1;
 
-    commandType = (quint8)cmdType::APP;
-    commandCode = (quint8)cmdCode::APP_SET_LANGUAGE;
+//    commandType = (quint8)cmdType::APP;
+//    commandCode = (quint8)cmdCode::APP_SET_LANGUAGE;
 
-    cmdBuffer[OFFSET_CMD_DATA] = chanl;
+//    cmdBuffer[OFFSET_CMD_DATA] = chanl;
 
-    CommandSend(cmdDataLength, commandType, commandCode, 0);
-}
+//    CommandSend(cmdDataLength, commandType, commandCode, 0);
+//}
 /***********************************************************************************************
 *函数名:  Get_SetSn_Init
 *函数功能描述:设置sn
@@ -1183,7 +1318,7 @@ void MainWindow::Get_SetSn_Init()
     quint8 SNsize = 0;
     quint8 index = 0;
     int TempSn = 0;
-    QSettings ReadConfig(tr("Setting.ini"),QSettings::IniFormat);
+    QSettings ReadConfig(tr("C:/ProgramData/C2000/ini/Setting.ini"),QSettings::IniFormat);
     if(!ReadConfig.contains(tr("Manage/CurrentType")))
     {
         ReadConfig.beginGroup(tr("Manage"));
@@ -1263,7 +1398,7 @@ void MainWindow::Get_SetSn_Init()
 void MainWindow::Config_File_Init()
 {
     int a,b,c;
-    QSettings ReadConfig(tr("Setting.ini"),QSettings::IniFormat);
+    QSettings ReadConfig(tr("C:/ProgramData/C2000/ini/Setting.ini"),QSettings::IniFormat);
     if(ReadConfig.contains(tr("Manage/CurrentType")))
     {
         ReadConfig.beginGroup(tr("Manage"));
@@ -1287,5 +1422,64 @@ void MainWindow::Config_File_Init()
     else
     {
         return;
+    }
+}
+
+void MainWindow::on_ChangeShow_clicked()
+{
+    if(ui->stackedWidget_2->currentIndex() == 0)
+    {
+        ui->stackedWidget_2->setCurrentIndex(1);
+    }
+    else if(ui->stackedWidget_2->currentIndex() == 1)
+    {
+        ui->stackedWidget_2->setCurrentIndex(0);
+    }
+}
+
+void MainWindow::on_pushButton_clicked()
+{
+    int cmdDataLength = 1;
+
+    commandType = (quint8)cmdType::APP;
+    commandCode = (quint8)cmdCode::APP_CLEAR_RECORD;
+
+    cmdBuffer[OFFSET_CMD_DATA] = 1;
+
+    CommandSend(cmdDataLength, commandType, commandCode, 0);
+
+}
+
+void MainWindow::on_Set_5V_clicked()
+{
+    int cmdDataLength = 1;
+
+    commandType = (quint8)cmdType::APP;
+    commandCode = (quint8)cmdCode::APP_SET_5V;
+
+    if(ui->Set_5V->text()==tr("打开5V"))
+    {
+        cmdBuffer[OFFSET_CMD_DATA] = 1;
+        ui->Set_5V->setText(tr("关闭5V"));
+    }
+    else
+    {
+        cmdBuffer[OFFSET_CMD_DATA] = 0;
+        ui->Set_5V->setText(tr("打开5V"));
+    }
+
+    CommandSend(cmdDataLength, commandType, commandCode, 0);
+}
+
+void MainWindow::on_password_clicked()
+{
+    Password_Information->Clear_Password();
+    if(Password_Information->exec() == 1)
+    {
+        ui->groupBox_2->setEnabled(true);
+    }
+    else
+    {
+        ui->groupBox_2->setEnabled(false);
     }
 }

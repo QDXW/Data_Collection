@@ -32,6 +32,8 @@ enum cmdCode {
     APP_SET_BORDER_LINE,
     APP_READ_BORDER_LINE,
     APP_RECEIVE_RAWDATA,
-    APP_SET_CAL
+    APP_SET_CAL,
+    APP_SET_5V,
+    APP_CLEAR_RECORD,
 };
 #endif // COMMAND_H

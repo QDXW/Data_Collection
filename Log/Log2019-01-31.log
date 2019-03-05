@@ -1,0 +1,64 @@
+
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_ClearBtn2_clicked()    0    2019-01-31 14:25:49.405
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_TypeSelctcomboBox_2_activated(int)    0    2019-01-31 14:25:49.409
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_APPSystemInfo_Btn_clicked()    0    2019-01-31 14:25:49.413
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_APPSystemInfo_Btn_4_clicked()    0    2019-01-31 14:25:49.416
+add 2019-01-31 14:25:49.937
+add 2019-01-31 14:25:49.939
+QSerialPort::SerialPortError(NoError) 2019-01-31 14:27:20.424
+QSerialPort::SerialPortError(NoError) 2019-01-31 14:27:24.488
+QSerialPort::SerialPortError(NoError) 2019-01-31 14:27:26.019
+QSerialPort::SerialPortError(NoError) 2019-01-31 14:34:03.608
+"24 07 00 00 00 01 F9 66 23 " 2019-01-31 14:34:04.570
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_ClearBtn2_clicked()    0    2019-01-31 14:34:23.965
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_TypeSelctcomboBox_2_activated(int)    0    2019-01-31 14:34:23.968
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_APPSystemInfo_Btn_clicked()    0    2019-01-31 14:34:23.971
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_APPSystemInfo_Btn_4_clicked()    0    2019-01-31 14:34:23.974
+add 2019-01-31 14:34:24.482
+add 2019-01-31 14:34:24.484
+QSerialPort::SerialPortError(NoError) 2019-01-31 14:34:26.904
+"24 07 00 00 00 01 F9 66 23 " 2019-01-31 14:34:28.144
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_ClearBtn2_clicked()    0    2019-01-31 14:34:59.549
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_TypeSelctcomboBox_2_activated(int)    0    2019-01-31 14:34:59.552
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_APPSystemInfo_Btn_clicked()    0    2019-01-31 14:34:59.554
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_APPSystemInfo_Btn_4_clicked()    0    2019-01-31 14:34:59.556
+add 2019-01-31 14:35:00.061
+add 2019-01-31 14:35:00.064
+QSerialPort::SerialPortError(NoError) 2019-01-31 14:35:01.504
+"24 07 00 00 00 01 F9 66 23 " 2019-01-31 14:35:03.291
+"24 06 00 FE 17 41 F1 23 " 2019-01-31 14:35:06.598
+QSerialPort::SerialPortError(NoError) 2019-01-31 14:57:23.273
+"24 07 00 00 00 01 F9 66 23 " 2019-01-31 14:57:23.991
+"24 06 00 FE 17 41 F1 23 " 2019-01-31 14:57:25.742
+QSerialPort::SerialPortError(NoError) 2019-01-31 14:59:47.985
+"24 07 00 00 00 01 F9 66 23 " 2019-01-31 14:59:48.605
+"24 06 00 FE 17 41 F1 23 " 2019-01-31 14:59:50.292
+rm  2019-01-31 15:29:12.977
+add 2019-01-31 15:29:13.486
+rm  2019-01-31 15:30:43.812
+add 2019-01-31 15:30:48.093
+rm  2019-01-31 15:33:41.503
+add 2019-01-31 15:33:46.718
+rm  2019-01-31 15:35:11.111
+add 2019-01-31 15:36:36.528
+rm  2019-01-31 15:36:37.311
+add 2019-01-31 15:36:38.320
+rm  2019-01-31 15:36:58.991
+add 2019-01-31 15:37:28.673
+rm  2019-01-31 15:50:06.154
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_ClearBtn2_clicked()    0    2019-01-31 16:15:15.183
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_TypeSelctcomboBox_2_activated(int)    0    2019-01-31 16:15:15.185
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_APPSystemInfo_Btn_clicked()    0    2019-01-31 16:15:15.187
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_APPSystemInfo_Btn_4_clicked()    0    2019-01-31 16:15:15.189
+add 2019-01-31 16:15:15.667
+QSerialPort::SerialPortError(NoError) 2019-01-31 16:15:17.454
+QSerialPort::SerialPortError(NoError) 2019-01-31 16:15:20.163
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_ClearBtn2_clicked()    0    2019-01-31 16:37:08.204
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_TypeSelctcomboBox_2_activated(int)    0    2019-01-31 16:37:08.206
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_APPSystemInfo_Btn_clicked()    0    2019-01-31 16:37:08.209
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_APPSystemInfo_Btn_4_clicked()    0    2019-01-31 16:37:08.211
+add 2019-01-31 16:37:08.722
+add 2019-01-31 16:37:13.956
+QSerialPort::SerialPortError(NoError) 2019-01-31 16:37:17.010
+QSerialPort::SerialPortError(PermissionError) 2019-01-31 16:37:17.012
+QSerialPort::SerialPortError(NoError) 2019-01-31 16:37:27.250

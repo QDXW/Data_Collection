@@ -33,7 +33,8 @@ SOURCES += \
         Qcustomplot/qcustomplot.cpp \
     Log/Log.cpp \
     common/CRC16.c \
-    Signalprocess/Signalprocess.c
+    Signalprocess/Signalprocess.c \
+    password.cpp
 
 HEADERS += \
         Qcustomplot/qcustomplot.h \
@@ -43,10 +44,12 @@ HEADERS += \
     common/Common.h \
     common/CRC16.h \
     Signalprocess/Signalprocess.h \
-    Signalprocess/qrcode.h
+    Signalprocess/qrcode.h \
+    password.h
 
 FORMS += \
-        mainwindow.ui
+        mainwindow.ui \
+    password.ui
 INCLUDEPATH += Qcustomplot/
 
 TRANSLATIONS += i18n/Lidar_fr.ts \
