@@ -1,0 +1,6 @@
+<!DOCTYPE RCC><RCC version="1.0">
+<qresource prefix="/">
+<file alias="RC_ICONS">D:/Work_file/DATA_Collection/RL-S100_C100-Data_20190305/RC_ICONS</file>
+<file alias="+=Image/realy.ico">D:/Work_file/DATA_Collection/RL-S100_C100-Data_20190305/+=Image/realy.ico</file>
+</qresource>
+</RCC>

@@ -47,6 +47,6 @@ typedef struct {
 } QRCODE_STRUCT;
 
 /******************************************************************************/
-//extern QRCODE_STRUCT QR_Date;
+extern QRCODE_STRUCT QR_Date;
 //extern uint8 QRCode_Buffer[QRCODE_BUFFER_SIZE];
 #endif // QRCODE_H

@@ -20,6 +20,8 @@
 #include "Signalprocess/qrcode.h"
 #include "Signalprocess/Signalprocess.h"
 #include "password.h"
+#include "lanuage.h"
+#include "interface.h"
 
 namespace Ui {
 class MainWindow;
@@ -101,14 +103,18 @@ private slots:
     void on_Clear_Btn_clicked();
 
     void on_JieKe_Btn_clicked();
+    void myChangeLanuageSlot(quint8);
+    void myChangeInterfaceSlot(quint8);
 
 private:
     Ui::MainWindow *ui;
     /*接受Buff*/
     QByteArray ReadBuff;
     QTimer *ExeCommand;
-
+public:
     Password *Password_Information;
+    Lanuage *Lanuage_Selecter;
+    Interface *Interface_Selecter;
 
     QStandardItemModel* dataModel;          //绑定表格Tableview
     QStandardItemModel* C_TModelLocal;      //绑定本地计算的CT TableView
@@ -129,6 +135,10 @@ private:
     QList<float> T_RecevDate[100];               //设备T
     int CandTRecevIndex = 0;
     QList<float> C_T_RecevDate;              //设备C/T
+
+    float C_Date;
+    float T_Date;
+    float C_T_Date;
 
     QTimer *SearchPortT;                    //刷新端口定时器
 
@@ -186,6 +196,10 @@ private slots:
     void on_pushButton_clicked();
     void on_Set_5V_clicked();
     void on_password_clicked();
+    void on_Language_Select_clicked();
+    void on_Interface_Select_clicked();
+signals:
+    void mysingal_English();
 };
 
 #endif // MAINWINDOW_H

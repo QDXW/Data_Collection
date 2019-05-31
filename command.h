@@ -35,5 +35,6 @@ enum cmdCode {
     APP_SET_CAL,
     APP_SET_5V,
     APP_CLEAR_RECORD,
+    APP_SET_INTERFACE = 0x7B,
 };
 #endif // COMMAND_H

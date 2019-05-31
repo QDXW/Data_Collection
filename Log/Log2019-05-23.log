@@ -1,0 +1,489 @@
+
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_ClearBtn2_clicked()    0    2019-05-23 10:46:49.102
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_TypeSelctcomboBox_2_activated(int)    0    2019-05-23 10:46:49.104
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_ChineseSet_Btn_clicked()    0    2019-05-23 10:46:49.107
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_EnglishSet_Btn_clicked()    0    2019-05-23 10:46:49.110
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_APPSystemInfo_Btn_clicked()    0    2019-05-23 10:46:49.111
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_APPSystemInfo_Btn_4_clicked()    0    2019-05-23 10:46:49.113
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_JieKe_Btn_clicked()    0    2019-05-23 10:46:49.115
+add 2019-05-23 10:46:49.709
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_ClearBtn2_clicked()    0    2019-05-23 10:48:21.208
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_TypeSelctcomboBox_2_activated(int)    0    2019-05-23 10:48:21.210
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_ChineseSet_Btn_clicked()    0    2019-05-23 10:48:21.212
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_EnglishSet_Btn_clicked()    0    2019-05-23 10:48:21.213
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_APPSystemInfo_Btn_clicked()    0    2019-05-23 10:48:21.215
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_APPSystemInfo_Btn_4_clicked()    0    2019-05-23 10:48:21.216
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_JieKe_Btn_clicked()    0    2019-05-23 10:48:21.218
+add 2019-05-23 10:48:21.764
+QSerialPort::SerialPortError(NoError) 2019-05-23 10:49:08.367
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_ClearBtn2_clicked()    0    2019-05-23 11:42:19.338
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_TypeSelctcomboBox_2_activated(int)    0    2019-05-23 11:42:19.340
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_ChineseSet_Btn_clicked()    0    2019-05-23 11:42:19.342
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_EnglishSet_Btn_clicked()    0    2019-05-23 11:42:19.343
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_APPSystemInfo_Btn_clicked()    0    2019-05-23 11:42:19.345
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_APPSystemInfo_Btn_4_clicked()    0    2019-05-23 11:42:19.346
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_JieKe_Btn_clicked()    0    2019-05-23 11:42:19.348
+add 2019-05-23 11:42:19.937
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_ClearBtn2_clicked()    0    2019-05-23 11:56:46.474
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_TypeSelctcomboBox_2_activated(int)    0    2019-05-23 11:56:46.476
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_ChineseSet_Btn_clicked()    0    2019-05-23 11:56:46.478
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_EnglishSet_Btn_clicked()    0    2019-05-23 11:56:46.481
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_APPSystemInfo_Btn_clicked()    0    2019-05-23 11:56:46.483
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_APPSystemInfo_Btn_4_clicked()    0    2019-05-23 11:56:46.485
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_JieKe_Btn_clicked()    0    2019-05-23 11:56:46.487
+add 2019-05-23 11:56:47.069
+100 2019-05-23 11:56:48.255
+100 2019-05-23 11:56:48.748
+100 2019-05-23 11:56:48.950
+100 2019-05-23 11:56:49.080
+100 2019-05-23 11:56:49.264
+100 2019-05-23 11:56:49.696
+100 2019-05-23 11:56:49.856
+100 2019-05-23 11:56:50.024
+100 2019-05-23 11:56:50.376
+100 2019-05-23 11:56:50.567
+100 2019-05-23 11:56:50.720
+100 2019-05-23 11:56:50.896
+100 2019-05-23 11:56:51.064
+100 2019-05-23 11:56:51.264
+100 2019-05-23 11:56:54.835
+100 2019-05-23 11:56:55.032
+100 2019-05-23 11:56:55.176
+100 2019-05-23 11:56:55.384
+100 2019-05-23 11:57:00.921
+100 2019-05-23 11:57:01.120
+100 2019-05-23 11:57:01.326
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_ClearBtn2_clicked()    0    2019-05-23 13:21:35.181
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_TypeSelctcomboBox_2_activated(int)    0    2019-05-23 13:21:35.183
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_ChineseSet_Btn_clicked()    0    2019-05-23 13:21:35.186
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_EnglishSet_Btn_clicked()    0    2019-05-23 13:21:35.188
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_APPSystemInfo_Btn_clicked()    0    2019-05-23 13:21:35.190
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_APPSystemInfo_Btn_4_clicked()    0    2019-05-23 13:21:35.192
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_JieKe_Btn_clicked()    0    2019-05-23 13:21:35.195
+add 2019-05-23 13:21:35.768
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_ClearBtn2_clicked()    0    2019-05-23 13:22:24.160
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_TypeSelctcomboBox_2_activated(int)    0    2019-05-23 13:22:24.162
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_ChineseSet_Btn_clicked()    0    2019-05-23 13:22:24.163
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_EnglishSet_Btn_clicked()    0    2019-05-23 13:22:24.165
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_APPSystemInfo_Btn_clicked()    0    2019-05-23 13:22:24.167
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_APPSystemInfo_Btn_4_clicked()    0    2019-05-23 13:22:24.168
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_JieKe_Btn_clicked()    0    2019-05-23 13:22:24.170
+add 2019-05-23 13:22:24.749
+QSerialPort::SerialPortError(NoError) 2019-05-23 13:22:40.521
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_ClearBtn2_clicked()    0    2019-05-23 14:05:44.627
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_TypeSelctcomboBox_2_activated(int)    0    2019-05-23 14:05:44.629
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_ChineseSet_Btn_clicked()    0    2019-05-23 14:05:44.631
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_EnglishSet_Btn_clicked()    0    2019-05-23 14:05:44.632
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_APPSystemInfo_Btn_clicked()    0    2019-05-23 14:05:44.634
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_APPSystemInfo_Btn_4_clicked()    0    2019-05-23 14:05:44.636
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_JieKe_Btn_clicked()    0    2019-05-23 14:05:44.637
+add 2019-05-23 14:05:45.183
+mainwindow: 1 2019-05-23 14:05:51.305
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_ClearBtn2_clicked()    0    2019-05-23 14:15:32.260
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_TypeSelctcomboBox_2_activated(int)    0    2019-05-23 14:15:32.262
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_ChineseSet_Btn_clicked()    0    2019-05-23 14:15:32.264
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_EnglishSet_Btn_clicked()    0    2019-05-23 14:15:32.266
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_APPSystemInfo_Btn_clicked()    0    2019-05-23 14:15:32.267
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_APPSystemInfo_Btn_4_clicked()    0    2019-05-23 14:15:32.270
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_JieKe_Btn_clicked()    0    2019-05-23 14:15:32.272
+add 2019-05-23 14:15:32.806
+mainwindow: 1 2019-05-23 14:16:09.706
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_ClearBtn2_clicked()    0    2019-05-23 14:17:13.475
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_TypeSelctcomboBox_2_activated(int)    0    2019-05-23 14:17:13.477
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_ChineseSet_Btn_clicked()    0    2019-05-23 14:17:13.479
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_EnglishSet_Btn_clicked()    0    2019-05-23 14:17:13.480
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_APPSystemInfo_Btn_clicked()    0    2019-05-23 14:17:13.482
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_APPSystemInfo_Btn_4_clicked()    0    2019-05-23 14:17:13.484
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_JieKe_Btn_clicked()    0    2019-05-23 14:17:13.486
+add 2019-05-23 14:17:14.047
+mainwindow: 2 2019-05-23 14:17:18.434
+mainwindow: 3 2019-05-23 14:17:20.826
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_ClearBtn2_clicked()    0    2019-05-23 14:19:16.849
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_TypeSelctcomboBox_2_activated(int)    0    2019-05-23 14:19:16.852
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_ChineseSet_Btn_clicked()    0    2019-05-23 14:19:16.854
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_EnglishSet_Btn_clicked()    0    2019-05-23 14:19:16.856
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_APPSystemInfo_Btn_clicked()    0    2019-05-23 14:19:16.857
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_APPSystemInfo_Btn_4_clicked()    0    2019-05-23 14:19:16.860
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_JieKe_Btn_clicked()    0    2019-05-23 14:19:16.862
+add 2019-05-23 14:19:17.419
+mainwindow: 3 2019-05-23 14:19:23.413
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_ClearBtn2_clicked()    0    2019-05-23 14:20:12.944
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_TypeSelctcomboBox_2_activated(int)    0    2019-05-23 14:20:12.946
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_ChineseSet_Btn_clicked()    0    2019-05-23 14:20:12.948
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_EnglishSet_Btn_clicked()    0    2019-05-23 14:20:12.949
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_APPSystemInfo_Btn_clicked()    0    2019-05-23 14:20:12.951
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_APPSystemInfo_Btn_4_clicked()    0    2019-05-23 14:20:12.953
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_JieKe_Btn_clicked()    0    2019-05-23 14:20:12.954
+add 2019-05-23 14:20:13.484
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_ClearBtn2_clicked()    0    2019-05-23 15:11:35.999
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_TypeSelctcomboBox_2_activated(int)    0    2019-05-23 15:11:36.001
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_ChineseSet_Btn_clicked()    0    2019-05-23 15:11:36.003
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_EnglishSet_Btn_clicked()    0    2019-05-23 15:11:36.006
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_APPSystemInfo_Btn_clicked()    0    2019-05-23 15:11:36.008
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_APPSystemInfo_Btn_4_clicked()    0    2019-05-23 15:11:36.010
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_JieKe_Btn_clicked()    0    2019-05-23 15:11:36.012
+Warning: QObject::connect: No such signal Interface::ChangeInterfaceSingal(quint8)    0    2019-05-23 15:11:36.313
+Warning: QObject::connect:  (sender name:   'Interface')    0    2019-05-23 15:11:36.315
+Warning: QObject::connect:  (receiver name: 'MainWindow')    0    2019-05-23 15:11:36.316
+add 2019-05-23 15:11:36.574
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_ClearBtn2_clicked()    0    2019-05-23 15:11:56.556
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_TypeSelctcomboBox_2_activated(int)    0    2019-05-23 15:11:56.558
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_ChineseSet_Btn_clicked()    0    2019-05-23 15:11:56.560
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_EnglishSet_Btn_clicked()    0    2019-05-23 15:11:56.562
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_APPSystemInfo_Btn_clicked()    0    2019-05-23 15:11:56.563
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_APPSystemInfo_Btn_4_clicked()    0    2019-05-23 15:11:56.565
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_JieKe_Btn_clicked()    0    2019-05-23 15:11:56.566
+Warning: QObject::connect: No such signal Interface::ChangeInterfaceSingal(quint8)    0    2019-05-23 15:11:56.866
+Warning: QObject::connect:  (sender name:   'Interface')    0    2019-05-23 15:11:56.868
+Warning: QObject::connect:  (receiver name: 'MainWindow')    0    2019-05-23 15:11:56.869
+add 2019-05-23 15:11:57.121
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_ClearBtn2_clicked()    0    2019-05-23 15:13:07.284
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_TypeSelctcomboBox_2_activated(int)    0    2019-05-23 15:13:07.286
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_ChineseSet_Btn_clicked()    0    2019-05-23 15:13:07.289
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_EnglishSet_Btn_clicked()    0    2019-05-23 15:13:07.291
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_APPSystemInfo_Btn_clicked()    0    2019-05-23 15:13:07.292
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_APPSystemInfo_Btn_4_clicked()    0    2019-05-23 15:13:07.294
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_JieKe_Btn_clicked()    0    2019-05-23 15:13:07.296
+Warning: QObject::connect: No such signal Interface::ChangeInterfaceSingal(quint8)    0    2019-05-23 15:13:07.593
+Warning: QObject::connect:  (sender name:   'Interface')    0    2019-05-23 15:13:07.595
+Warning: QObject::connect:  (receiver name: 'MainWindow')    0    2019-05-23 15:13:07.597
+add 2019-05-23 15:13:07.839
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_ClearBtn2_clicked()    0    2019-05-23 15:13:20.100
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_TypeSelctcomboBox_2_activated(int)    0    2019-05-23 15:13:20.102
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_ChineseSet_Btn_clicked()    0    2019-05-23 15:13:20.104
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_EnglishSet_Btn_clicked()    0    2019-05-23 15:13:20.106
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_APPSystemInfo_Btn_clicked()    0    2019-05-23 15:13:20.107
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_APPSystemInfo_Btn_4_clicked()    0    2019-05-23 15:13:20.109
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_JieKe_Btn_clicked()    0    2019-05-23 15:13:20.111
+Warning: QObject::connect: No such signal Interface::ChangeInterfaceSingal(quint8)    0    2019-05-23 15:13:20.408
+Warning: QObject::connect:  (sender name:   'Interface')    0    2019-05-23 15:13:20.410
+Warning: QObject::connect:  (receiver name: 'MainWindow')    0    2019-05-23 15:13:20.412
+add 2019-05-23 15:13:20.651
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_ClearBtn2_clicked()    0    2019-05-23 15:13:49.108
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_TypeSelctcomboBox_2_activated(int)    0    2019-05-23 15:13:49.110
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_ChineseSet_Btn_clicked()    0    2019-05-23 15:13:49.112
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_EnglishSet_Btn_clicked()    0    2019-05-23 15:13:49.114
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_APPSystemInfo_Btn_clicked()    0    2019-05-23 15:13:49.116
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_APPSystemInfo_Btn_4_clicked()    0    2019-05-23 15:13:49.118
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_JieKe_Btn_clicked()    0    2019-05-23 15:13:49.120
+Warning: QObject::connect: No such signal Interface::ChangeInterfaceSingal(quint8)    0    2019-05-23 15:13:49.417
+Warning: QObject::connect:  (sender name:   'Interface')    0    2019-05-23 15:13:49.419
+Warning: QObject::connect:  (receiver name: 'MainWindow')    0    2019-05-23 15:13:49.421
+add 2019-05-23 15:13:49.662
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_ClearBtn2_clicked()    0    2019-05-23 15:28:26.629
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_TypeSelctcomboBox_2_activated(int)    0    2019-05-23 15:28:26.632
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_ChineseSet_Btn_clicked()    0    2019-05-23 15:28:26.634
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_EnglishSet_Btn_clicked()    0    2019-05-23 15:28:26.637
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_APPSystemInfo_Btn_clicked()    0    2019-05-23 15:28:26.640
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_APPSystemInfo_Btn_4_clicked()    0    2019-05-23 15:28:26.642
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_JieKe_Btn_clicked()    0    2019-05-23 15:28:26.645
+add 2019-05-23 15:28:27.185
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_ClearBtn2_clicked()    0    2019-05-23 15:28:46.228
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_TypeSelctcomboBox_2_activated(int)    0    2019-05-23 15:28:46.231
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_ChineseSet_Btn_clicked()    0    2019-05-23 15:28:46.233
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_EnglishSet_Btn_clicked()    0    2019-05-23 15:28:46.234
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_APPSystemInfo_Btn_clicked()    0    2019-05-23 15:28:46.236
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_APPSystemInfo_Btn_4_clicked()    0    2019-05-23 15:28:46.238
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_JieKe_Btn_clicked()    0    2019-05-23 15:28:46.241
+add 2019-05-23 15:28:46.784
+2 2019-05-23 15:28:51.256
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_ClearBtn2_clicked()    0    2019-05-23 15:28:58.719
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_TypeSelctcomboBox_2_activated(int)    0    2019-05-23 15:28:58.721
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_ChineseSet_Btn_clicked()    0    2019-05-23 15:28:58.723
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_EnglishSet_Btn_clicked()    0    2019-05-23 15:28:58.725
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_APPSystemInfo_Btn_clicked()    0    2019-05-23 15:28:58.726
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_APPSystemInfo_Btn_4_clicked()    0    2019-05-23 15:28:58.728
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_JieKe_Btn_clicked()    0    2019-05-23 15:28:58.729
+add 2019-05-23 15:28:59.277
+3 2019-05-23 15:29:04.642
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_ClearBtn2_clicked()    0    2019-05-23 15:29:26.708
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_TypeSelctcomboBox_2_activated(int)    0    2019-05-23 15:29:26.710
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_ChineseSet_Btn_clicked()    0    2019-05-23 15:29:26.712
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_EnglishSet_Btn_clicked()    0    2019-05-23 15:29:26.714
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_APPSystemInfo_Btn_clicked()    0    2019-05-23 15:29:26.715
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_APPSystemInfo_Btn_4_clicked()    0    2019-05-23 15:29:26.718
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_JieKe_Btn_clicked()    0    2019-05-23 15:29:26.720
+add 2019-05-23 15:29:27.269
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_ClearBtn2_clicked()    0    2019-05-23 15:32:06.564
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_TypeSelctcomboBox_2_activated(int)    0    2019-05-23 15:32:06.567
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_ChineseSet_Btn_clicked()    0    2019-05-23 15:32:06.569
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_EnglishSet_Btn_clicked()    0    2019-05-23 15:32:06.571
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_APPSystemInfo_Btn_clicked()    0    2019-05-23 15:32:06.573
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_APPSystemInfo_Btn_4_clicked()    0    2019-05-23 15:32:06.575
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_JieKe_Btn_clicked()    0    2019-05-23 15:32:06.577
+add 2019-05-23 15:32:07.126
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_ClearBtn2_clicked()    0    2019-05-23 15:32:38.046
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_TypeSelctcomboBox_2_activated(int)    0    2019-05-23 15:32:38.049
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_ChineseSet_Btn_clicked()    0    2019-05-23 15:32:38.051
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_EnglishSet_Btn_clicked()    0    2019-05-23 15:32:38.053
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_APPSystemInfo_Btn_clicked()    0    2019-05-23 15:32:38.055
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_APPSystemInfo_Btn_4_clicked()    0    2019-05-23 15:32:38.057
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_JieKe_Btn_clicked()    0    2019-05-23 15:32:38.059
+add 2019-05-23 15:32:38.602
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_ClearBtn2_clicked()    0    2019-05-23 15:40:42.514
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_TypeSelctcomboBox_2_activated(int)    0    2019-05-23 15:40:42.517
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_ChineseSet_Btn_clicked()    0    2019-05-23 15:40:42.519
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_EnglishSet_Btn_clicked()    0    2019-05-23 15:40:42.522
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_APPSystemInfo_Btn_clicked()    0    2019-05-23 15:40:42.524
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_APPSystemInfo_Btn_4_clicked()    0    2019-05-23 15:40:42.526
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_JieKe_Btn_clicked()    0    2019-05-23 15:40:42.528
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_ClearBtn2_clicked()    0    2019-05-23 15:40:52.475
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_TypeSelctcomboBox_2_activated(int)    0    2019-05-23 15:40:52.478
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_ChineseSet_Btn_clicked()    0    2019-05-23 15:40:52.481
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_EnglishSet_Btn_clicked()    0    2019-05-23 15:40:52.483
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_APPSystemInfo_Btn_clicked()    0    2019-05-23 15:40:52.485
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_APPSystemInfo_Btn_4_clicked()    0    2019-05-23 15:40:52.487
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_JieKe_Btn_clicked()    0    2019-05-23 15:40:52.489
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_ClearBtn2_clicked()    0    2019-05-23 15:41:02.955
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_TypeSelctcomboBox_2_activated(int)    0    2019-05-23 15:41:02.957
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_ChineseSet_Btn_clicked()    0    2019-05-23 15:41:02.959
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_EnglishSet_Btn_clicked()    0    2019-05-23 15:41:02.960
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_APPSystemInfo_Btn_clicked()    0    2019-05-23 15:41:02.962
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_APPSystemInfo_Btn_4_clicked()    0    2019-05-23 15:41:02.964
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_JieKe_Btn_clicked()    0    2019-05-23 15:41:02.966
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_ClearBtn2_clicked()    0    2019-05-23 15:41:33.993
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_TypeSelctcomboBox_2_activated(int)    0    2019-05-23 15:41:33.996
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_ChineseSet_Btn_clicked()    0    2019-05-23 15:41:33.997
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_EnglishSet_Btn_clicked()    0    2019-05-23 15:41:33.999
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_APPSystemInfo_Btn_clicked()    0    2019-05-23 15:41:34.001
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_APPSystemInfo_Btn_4_clicked()    0    2019-05-23 15:41:34.004
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_JieKe_Btn_clicked()    0    2019-05-23 15:41:34.006
+add 2019-05-23 15:41:34.560
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_ClearBtn2_clicked()    0    2019-05-23 15:41:57.436
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_TypeSelctcomboBox_2_activated(int)    0    2019-05-23 15:41:57.438
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_ChineseSet_Btn_clicked()    0    2019-05-23 15:41:57.440
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_EnglishSet_Btn_clicked()    0    2019-05-23 15:41:57.442
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_APPSystemInfo_Btn_clicked()    0    2019-05-23 15:41:57.443
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_APPSystemInfo_Btn_4_clicked()    0    2019-05-23 15:41:57.445
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_JieKe_Btn_clicked()    0    2019-05-23 15:41:57.446
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_ClearBtn2_clicked()    0    2019-05-23 15:43:42.263
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_TypeSelctcomboBox_2_activated(int)    0    2019-05-23 15:43:42.266
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_ChineseSet_Btn_clicked()    0    2019-05-23 15:43:42.267
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_EnglishSet_Btn_clicked()    0    2019-05-23 15:43:42.269
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_APPSystemInfo_Btn_clicked()    0    2019-05-23 15:43:42.271
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_APPSystemInfo_Btn_4_clicked()    0    2019-05-23 15:43:42.272
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_JieKe_Btn_clicked()    0    2019-05-23 15:43:42.274
+add 2019-05-23 15:43:42.824
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_ClearBtn2_clicked()    0    2019-05-23 15:44:45.309
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_TypeSelctcomboBox_2_activated(int)    0    2019-05-23 15:44:45.311
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_ChineseSet_Btn_clicked()    0    2019-05-23 15:44:45.313
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_EnglishSet_Btn_clicked()    0    2019-05-23 15:44:45.316
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_APPSystemInfo_Btn_clicked()    0    2019-05-23 15:44:45.319
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_APPSystemInfo_Btn_4_clicked()    0    2019-05-23 15:44:45.322
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_JieKe_Btn_clicked()    0    2019-05-23 15:44:45.325
+add 2019-05-23 15:44:45.880
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_ClearBtn2_clicked()    0    2019-05-23 15:49:07.302
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_TypeSelctcomboBox_2_activated(int)    0    2019-05-23 15:49:07.305
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_ChineseSet_Btn_clicked()    0    2019-05-23 15:49:07.306
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_EnglishSet_Btn_clicked()    0    2019-05-23 15:49:07.309
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_APPSystemInfo_Btn_clicked()    0    2019-05-23 15:49:07.311
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_APPSystemInfo_Btn_4_clicked()    0    2019-05-23 15:49:07.314
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_JieKe_Btn_clicked()    0    2019-05-23 15:49:07.316
+add 2019-05-23 15:49:07.869
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_ClearBtn2_clicked()    0    2019-05-23 15:49:51.907
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_TypeSelctcomboBox_2_activated(int)    0    2019-05-23 15:49:51.909
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_ChineseSet_Btn_clicked()    0    2019-05-23 15:49:51.911
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_EnglishSet_Btn_clicked()    0    2019-05-23 15:49:51.912
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_APPSystemInfo_Btn_clicked()    0    2019-05-23 15:49:51.914
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_APPSystemInfo_Btn_4_clicked()    0    2019-05-23 15:49:51.916
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_JieKe_Btn_clicked()    0    2019-05-23 15:49:51.917
+add 2019-05-23 15:49:52.468
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_ClearBtn2_clicked()    0    2019-05-23 15:51:03.844
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_TypeSelctcomboBox_2_activated(int)    0    2019-05-23 15:51:03.846
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_ChineseSet_Btn_clicked()    0    2019-05-23 15:51:03.848
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_EnglishSet_Btn_clicked()    0    2019-05-23 15:51:03.849
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_APPSystemInfo_Btn_clicked()    0    2019-05-23 15:51:03.851
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_APPSystemInfo_Btn_4_clicked()    0    2019-05-23 15:51:03.853
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_JieKe_Btn_clicked()    0    2019-05-23 15:51:03.855
+add 2019-05-23 15:51:04.409
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_ClearBtn2_clicked()    0    2019-05-23 15:53:06.028
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_TypeSelctcomboBox_2_activated(int)    0    2019-05-23 15:53:06.031
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_ChineseSet_Btn_clicked()    0    2019-05-23 15:53:06.033
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_EnglishSet_Btn_clicked()    0    2019-05-23 15:53:06.035
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_APPSystemInfo_Btn_clicked()    0    2019-05-23 15:53:06.037
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_APPSystemInfo_Btn_4_clicked()    0    2019-05-23 15:53:06.039
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_JieKe_Btn_clicked()    0    2019-05-23 15:53:06.042
+add 2019-05-23 15:53:06.597
+add 2019-05-23 17:16:51.223
+QSerialPort::SerialPortError(NoError) 2019-05-23 17:18:42.053
+"24 07 00 00 00 01 F9 66 23 " 2019-05-23 17:18:45.735
+"24 06 00 FE 15 03 D1 23 " 2019-05-23 17:19:22.239
+QSerialPort::SerialPortError(ResourceError) 2019-05-23 17:28:20.071
+add 2019-05-23 17:28:26.356
+QSerialPort::SerialPortError(PermissionError) 2019-05-23 17:30:09.228
+rm  2019-05-23 17:30:09.384
+QSerialPort::SerialPortError(NoError) 2019-05-23 17:30:10.586
+"24 07 00 00 00 01 F9 66 23 " 2019-05-23 17:30:11.280
+"24 06 00 FE 15 03 D1 23 " 2019-05-23 17:30:12.841
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_ClearBtn2_clicked()    0    2019-05-23 17:37:21.223
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_TypeSelctcomboBox_2_activated(int)    0    2019-05-23 17:37:21.226
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_ChineseSet_Btn_clicked()    0    2019-05-23 17:37:21.228
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_EnglishSet_Btn_clicked()    0    2019-05-23 17:37:21.231
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_APPSystemInfo_Btn_clicked()    0    2019-05-23 17:37:21.233
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_APPSystemInfo_Btn_4_clicked()    0    2019-05-23 17:37:21.235
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_JieKe_Btn_clicked()    0    2019-05-23 17:37:21.238
+add 2019-05-23 17:37:21.836
+add 2019-05-23 17:37:21.838
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_ClearBtn2_clicked()    0    2019-05-23 17:37:29.762
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_TypeSelctcomboBox_2_activated(int)    0    2019-05-23 17:37:29.765
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_ChineseSet_Btn_clicked()    0    2019-05-23 17:37:29.766
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_EnglishSet_Btn_clicked()    0    2019-05-23 17:37:29.768
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_APPSystemInfo_Btn_clicked()    0    2019-05-23 17:37:29.770
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_APPSystemInfo_Btn_4_clicked()    0    2019-05-23 17:37:29.772
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_JieKe_Btn_clicked()    0    2019-05-23 17:37:29.775
+add 2019-05-23 17:37:30.345
+add 2019-05-23 17:37:30.349
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_ClearBtn2_clicked()    0    2019-05-23 17:37:51.948
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_TypeSelctcomboBox_2_activated(int)    0    2019-05-23 17:37:51.951
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_ChineseSet_Btn_clicked()    0    2019-05-23 17:37:51.953
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_EnglishSet_Btn_clicked()    0    2019-05-23 17:37:51.956
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_APPSystemInfo_Btn_clicked()    0    2019-05-23 17:37:51.958
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_APPSystemInfo_Btn_4_clicked()    0    2019-05-23 17:37:51.960
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_JieKe_Btn_clicked()    0    2019-05-23 17:37:51.962
+add 2019-05-23 17:37:52.551
+add 2019-05-23 17:37:52.555
+QSerialPort::SerialPortError(NoError) 2019-05-23 17:37:58.556
+"24 06 00 FE 17 41 F1 23 " 2019-05-23 17:38:17.542
+"24 06 00 FE 17 41 F1 23 " 2019-05-23 17:38:27.293
+"24 06 00 FE 17 41 F1 23 " 2019-05-23 17:38:36.130
+"24 06 00 FE 17 41 F1 23 " 2019-05-23 17:38:42.697
+"24 06 00 FE 17 41 F1 23 " 2019-05-23 17:38:48.113
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_ClearBtn2_clicked()    0    2019-05-23 17:39:39.043
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_TypeSelctcomboBox_2_activated(int)    0    2019-05-23 17:39:39.046
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_ChineseSet_Btn_clicked()    0    2019-05-23 17:39:39.048
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_EnglishSet_Btn_clicked()    0    2019-05-23 17:39:39.050
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_APPSystemInfo_Btn_clicked()    0    2019-05-23 17:39:39.053
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_APPSystemInfo_Btn_4_clicked()    0    2019-05-23 17:39:39.055
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_JieKe_Btn_clicked()    0    2019-05-23 17:39:39.057
+Warning: QObject::connect: No such slot MainWindow::myChangeLanuageSlot(quint8)    0    2019-05-23 17:39:39.379
+Warning: QObject::connect:  (sender name:   'Lanuage')    0    2019-05-23 17:39:39.381
+Warning: QObject::connect:  (receiver name: 'MainWindow')    0    2019-05-23 17:39:39.382
+add 2019-05-23 17:39:39.663
+add 2019-05-23 17:39:39.665
+QSerialPort::SerialPortError(NoError) 2019-05-23 17:39:44.385
+"24 07 00 00 00 01 F9 66 23 " 2019-05-23 17:39:51.401
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_ClearBtn2_clicked()    0    2019-05-23 17:41:01.436
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_TypeSelctcomboBox_2_activated(int)    0    2019-05-23 17:41:01.438
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_ChineseSet_Btn_clicked()    0    2019-05-23 17:41:01.440
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_EnglishSet_Btn_clicked()    0    2019-05-23 17:41:01.449
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_APPSystemInfo_Btn_clicked()    0    2019-05-23 17:41:01.453
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_APPSystemInfo_Btn_4_clicked()    0    2019-05-23 17:41:01.455
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_JieKe_Btn_clicked()    0    2019-05-23 17:41:01.457
+add 2019-05-23 17:41:02.028
+add 2019-05-23 17:41:02.031
+QSerialPort::SerialPortError(NoError) 2019-05-23 17:41:04.389
+"24 06 00 FE 17 41 F1 23 " 2019-05-23 17:41:06.163
+"24 06 00 FE 17 41 F1 23 " 2019-05-23 17:41:15.279
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_ClearBtn2_clicked()    0    2019-05-23 17:44:21.453
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_TypeSelctcomboBox_2_activated(int)    0    2019-05-23 17:44:21.455
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_ChineseSet_Btn_clicked()    0    2019-05-23 17:44:21.458
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_EnglishSet_Btn_clicked()    0    2019-05-23 17:44:21.460
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_APPSystemInfo_Btn_clicked()    0    2019-05-23 17:44:21.462
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_APPSystemInfo_Btn_4_clicked()    0    2019-05-23 17:44:21.464
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_JieKe_Btn_clicked()    0    2019-05-23 17:44:21.466
+add 2019-05-23 17:44:22.044
+add 2019-05-23 17:44:22.046
+3 2019-05-23 17:44:27.103
+QSerialPort::SerialPortError(NoError) 2019-05-23 17:44:27.941
+3 2019-05-23 17:44:30.083
+"24 06 00 FE 17 41 F1 23 " 2019-05-23 17:44:30.143
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_ClearBtn2_clicked()    0    2019-05-23 17:45:25.422
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_TypeSelctcomboBox_2_activated(int)    0    2019-05-23 17:45:25.424
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_ChineseSet_Btn_clicked()    0    2019-05-23 17:45:25.426
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_EnglishSet_Btn_clicked()    0    2019-05-23 17:45:25.427
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_APPSystemInfo_Btn_clicked()    0    2019-05-23 17:45:25.429
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_APPSystemInfo_Btn_4_clicked()    0    2019-05-23 17:45:25.431
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_JieKe_Btn_clicked()    0    2019-05-23 17:45:25.433
+add 2019-05-23 17:45:26.031
+add 2019-05-23 17:45:26.033
+3 2019-05-23 17:45:29.978
+QSerialPort::SerialPortError(NoError) 2019-05-23 17:45:30.758
+3 2019-05-23 17:45:34.676
+"24 06 00 FE 17 41 F1 23 " 2019-05-23 17:45:34.797
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_ClearBtn2_clicked()    0    2019-05-23 17:45:50.585
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_TypeSelctcomboBox_2_activated(int)    0    2019-05-23 17:45:50.587
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_ChineseSet_Btn_clicked()    0    2019-05-23 17:45:50.589
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_EnglishSet_Btn_clicked()    0    2019-05-23 17:45:50.591
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_APPSystemInfo_Btn_clicked()    0    2019-05-23 17:45:50.592
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_APPSystemInfo_Btn_4_clicked()    0    2019-05-23 17:45:50.594
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_JieKe_Btn_clicked()    0    2019-05-23 17:45:50.596
+add 2019-05-23 17:45:51.174
+add 2019-05-23 17:45:51.177
+2 2019-05-23 17:45:56.465
+QSerialPort::SerialPortError(NoError) 2019-05-23 17:45:57.205
+2 2019-05-23 17:46:00.532
+"24 06 00 FE 17 41 F1 23 " 2019-05-23 17:46:00.641
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_ClearBtn2_clicked()    0    2019-05-23 17:56:59.973
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_TypeSelctcomboBox_2_activated(int)    0    2019-05-23 17:56:59.975
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_ChineseSet_Btn_clicked()    0    2019-05-23 17:56:59.977
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_EnglishSet_Btn_clicked()    0    2019-05-23 17:56:59.979
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_APPSystemInfo_Btn_clicked()    0    2019-05-23 17:56:59.984
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_APPSystemInfo_Btn_4_clicked()    0    2019-05-23 17:56:59.986
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_JieKe_Btn_clicked()    0    2019-05-23 17:56:59.988
+add 2019-05-23 17:57:00.551
+add 2019-05-23 17:57:00.553
+QSerialPort::SerialPortError(NoError) 2019-05-23 17:57:02.677
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_ClearBtn2_clicked()    0    2019-05-23 17:57:32.966
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_TypeSelctcomboBox_2_activated(int)    0    2019-05-23 17:57:32.969
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_ChineseSet_Btn_clicked()    0    2019-05-23 17:57:32.971
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_EnglishSet_Btn_clicked()    0    2019-05-23 17:57:32.974
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_APPSystemInfo_Btn_clicked()    0    2019-05-23 17:57:32.976
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_APPSystemInfo_Btn_4_clicked()    0    2019-05-23 17:57:32.977
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_JieKe_Btn_clicked()    0    2019-05-23 17:57:32.979
+add 2019-05-23 17:57:33.555
+add 2019-05-23 17:57:33.558
+QSerialPort::SerialPortError(NoError) 2019-05-23 17:57:46.029
+"24 06 00 FE 17 41 F1 23 " 2019-05-23 17:57:52.317
+"24 06 00 FE 17 41 F1 23 " 2019-05-23 17:58:12.846
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_ClearBtn2_clicked()    0    2019-05-23 17:58:28.172
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_TypeSelctcomboBox_2_activated(int)    0    2019-05-23 17:58:28.174
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_ChineseSet_Btn_clicked()    0    2019-05-23 17:58:28.176
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_EnglishSet_Btn_clicked()    0    2019-05-23 17:58:28.181
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_APPSystemInfo_Btn_clicked()    0    2019-05-23 17:58:28.182
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_APPSystemInfo_Btn_4_clicked()    0    2019-05-23 17:58:28.184
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_JieKe_Btn_clicked()    0    2019-05-23 17:58:28.186
+add 2019-05-23 17:58:28.759
+add 2019-05-23 17:58:28.763
+QSerialPort::SerialPortError(NoError) 2019-05-23 17:58:30.472
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_ClearBtn2_clicked()    0    2019-05-23 17:59:15.154
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_TypeSelctcomboBox_2_activated(int)    0    2019-05-23 17:59:15.156
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_ChineseSet_Btn_clicked()    0    2019-05-23 17:59:15.158
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_EnglishSet_Btn_clicked()    0    2019-05-23 17:59:15.160
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_APPSystemInfo_Btn_clicked()    0    2019-05-23 17:59:15.161
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_APPSystemInfo_Btn_4_clicked()    0    2019-05-23 17:59:15.163
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_JieKe_Btn_clicked()    0    2019-05-23 17:59:15.166
+add 2019-05-23 17:59:15.724
+add 2019-05-23 17:59:15.727
+QSerialPort::SerialPortError(NoError) 2019-05-23 17:59:32.597
+"24 06 00 FE 17 41 F1 23 " 2019-05-23 17:59:59.037
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_ClearBtn2_clicked()    0    2019-05-23 18:03:25.239
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_TypeSelctcomboBox_2_activated(int)    0    2019-05-23 18:03:25.244
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_ChineseSet_Btn_clicked()    0    2019-05-23 18:03:25.246
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_EnglishSet_Btn_clicked()    0    2019-05-23 18:03:25.248
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_APPSystemInfo_Btn_clicked()    0    2019-05-23 18:03:25.250
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_APPSystemInfo_Btn_4_clicked()    0    2019-05-23 18:03:25.252
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_JieKe_Btn_clicked()    0    2019-05-23 18:03:25.254
+add 2019-05-23 18:03:25.844
+add 2019-05-23 18:03:25.847
+QSerialPort::SerialPortError(NoError) 2019-05-23 18:03:27.894
+"24 06 00 FE 17 41 F1 23 " 2019-05-23 18:03:35.649
+"24 06 00 FE 17 41 F1 23 " 2019-05-23 18:05:09.150
+QSerialPort::SerialPortError(ResourceError) 2019-05-23 18:08:26.561
+add 2019-05-23 18:08:31.706
+QSerialPort::SerialPortError(WriteError) 2019-05-23 18:10:32.859
+QSerialPort::SerialPortError(WriteError) 2019-05-23 18:10:36.589
+QSerialPort::SerialPortError(PermissionError) 2019-05-23 18:10:38.106
+rm  2019-05-23 18:10:38.312
+QSerialPort::SerialPortError(NoError) 2019-05-23 18:10:40.551
+QSerialPort::SerialPortError(ResourceError) 2019-05-23 18:14:41.771
+add 2019-05-23 18:14:46.956
+QSerialPort::SerialPortError(PermissionError) 2019-05-23 18:16:19.442
+rm  2019-05-23 18:16:19.620
+QSerialPort::SerialPortError(NoError) 2019-05-23 18:16:21.173
+"24 06 00 FE 7B 6B 5C 23 " 2019-05-23 18:16:25.632
+"24 06 00 FE 7B 6B 5C 23 " 2019-05-23 18:16:27.258
+"24 06 00 FE 17 41 F1 23 " 2019-05-23 18:16:58.457
+"24 06 00 FE 7B 6B 5C 23 " 2019-05-23 18:17:08.939
+"24 06 00 FE 7B 6B 5C 23 " 2019-05-23 18:17:10.999
+QSerialPort::SerialPortError(ResourceError) 2019-05-23 18:18:46.153
+add 2019-05-23 18:18:51.580

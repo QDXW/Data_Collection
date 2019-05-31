@@ -1,0 +1,6 @@
+
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_ClearBtn2_clicked()    0    2019-03-05 18:00:05.008
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_TypeSelctcomboBox_2_activated(int)    0    2019-03-05 18:00:05.012
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_APPSystemInfo_Btn_clicked()    0    2019-03-05 18:00:05.015
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_APPSystemInfo_Btn_4_clicked()    0    2019-03-05 18:00:05.017
+add 2019-03-05 18:00:05.466

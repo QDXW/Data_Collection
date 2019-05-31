@@ -34,7 +34,9 @@ SOURCES += \
     Log/Log.cpp \
     common/CRC16.c \
     Signalprocess/Signalprocess.c \
-    password.cpp
+    password.cpp \
+    lanuage.cpp \
+    interface.cpp
 
 HEADERS += \
         Qcustomplot/qcustomplot.h \
@@ -45,11 +47,15 @@ HEADERS += \
     common/CRC16.h \
     Signalprocess/Signalprocess.h \
     Signalprocess/qrcode.h \
-    password.h
+    password.h \
+    lanuage.h \
+    interface.h
 
 FORMS += \
         mainwindow.ui \
-    password.ui
+    password.ui \
+    lanuage.ui \
+    interface.ui
 INCLUDEPATH += Qcustomplot/
 
 TRANSLATIONS += i18n/Lidar_fr.ts \
@@ -60,4 +66,5 @@ TRANSLATIONS += i18n/Lidar_fr.ts \
 RESOURCES += \
     translations.qrc \
     ver.qrc
+
 RC_ICONS +=Image/realy.ico

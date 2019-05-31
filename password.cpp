@@ -8,6 +8,10 @@ Password::Password(QWidget *parent) :
 {
     ui->setupUi(this);
     ui->User_Label->setFocus();
+    this->setMinimumHeight(300);
+    this->setMaximumHeight(300);
+    this->setMaximumWidth(400);
+    this->setMinimumWidth(400);
     this->setWindowTitle("Password");
 }
 

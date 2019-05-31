@@ -1,6 +1,6 @@
 #include <windows.h>
 
-IDI_ICON1	ICON	DISCARDABLE	"D:\\Work_file\\RL-A2000-Test\\Image\\realy.ico"
+IDI_ICON1	ICON	DISCARDABLE	"D:\\Work_file\\DATA_Collection\\RL-S100_C100-Data_20190305\\Image\\realy.ico"
 
 VS_VERSION_INFO VERSIONINFO
 	FILEVERSION 0,0,0,0
